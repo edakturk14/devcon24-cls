@@ -68,12 +68,23 @@ contract MyNFT is ERC721 {
 - Use **DaisyUI components** to build an intuitive and visually appealing NFT minting interface. Check them out here: https://daisyui.com/components/card/
 
 ```
-<div className="items-center flex flex-col">
-
-<h1: nft collection details>
-<daisy ui card>
-
-</div>
+      <div className="flex items-center flex-col mt-10">
+        <h1 className="text-center">
+          <span className="block text-4xl font-bold">Mint a Bird</span>
+          <span className="block text-2xl font-bold mt-1">NFTs left: {remaining}</span>
+        </h1>
+        <div className="card bg-base-100 w-96 shadow-xl mt-5">
+          <figure>
+            <img
+              src="https://cdn.britannica.com/33/226533-050-404C15AF/Canary-on-pear-branch.jpg"
+              alt="A cute bird"
+              className="w-full h-48 object-cover"
+            />
+          </figure>
+          <div className="card-body items-center">
+          </div>
+        </div>
+      </div>
 ```
 
 - **Test** the frontend to make sure it works smoothly and provides a good user experience.
